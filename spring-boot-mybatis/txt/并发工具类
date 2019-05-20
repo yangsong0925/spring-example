@@ -1,0 +1,4 @@
+并发工具类 CountDownLatch、CyclicBarrier、Semaphore、ConcurrentHashMap、BlockingQueue。 java.util.concurrent包下。
+	CountDownLatch类能够使一个线程等待其他线程完成各自的工作后再执行。
+
+	http://www.importnew.com/15731.html

@@ -1,0 +1,7 @@
+Spring Boot 注解：
+	@SpringBootApplication: 复合注解，重要的三个注解包含 @SpringBootConfiguration 、@EnableAutoConfiguration 、@ComponentScan 通常用在主类上。
+		@SpringBootConfiguration：该注解与 @ComponentScan 的作用相同，表示其标注的类是 IOC 容器的配置类。	
+		@EnableAutoConfiguration：用于将所有符合自动配置的 Bean 加载到当前 Spring Boot 创建并使用的 IOC 容器中。
+		@ComponentScan：用于自动扫描和加载符合条件的组件或 Bean，并将 Bean 加载到 IOC 容器中
+
+	
