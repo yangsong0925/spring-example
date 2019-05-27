@@ -1,10 +1,7 @@
 package com.sys.mybatis.mapper;
 
 import com.sys.mybatis.entity.User;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -23,5 +20,12 @@ public interface UserMapper {
 
     @Delete("delete from tb_user where id = #{id}")
     int delete(@Param("id") Integer id);
+
+
+    @Insert(" insert into tb_user (username,address) values " +
+            " <foreach item='value' index='key' collection='users' separator=','> " +
+            " (#{username},#{address}) " +
+            " </foreach> ")
+    int saveUsers(List<User> users);
 
 }
