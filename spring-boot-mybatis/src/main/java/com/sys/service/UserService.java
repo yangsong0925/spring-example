@@ -11,7 +11,7 @@ import java.util.List;
  * @modified By：
  * @version: $version$
  */
-public interface UserSservice {
+public interface UserService {
 
     /**
      * 查询所有用户

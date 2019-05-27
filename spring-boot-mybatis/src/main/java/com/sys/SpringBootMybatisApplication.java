@@ -1,4 +1,4 @@
-package com.sys.mybatis;
+package com.sys;
 
 import com.sys.interceptor.CustomHandlerInterceptor;
 import org.springframework.boot.SpringApplication;
