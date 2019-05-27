@@ -1,2 +1,8 @@
 Spring Boot 配置外部属性:
-    YAML 是 JSON 的一个超集
+    YAML 是 JSON 的一个超集，将外部配置以层次结构存储起来。( 当项目的类路径中有 SnakeYAML 库 <spring-boot-stater 中已经包含>时，SpringApplication 类自动致辞 YAML作为 properties 的替代。)
+    文件后缀: .yml 或 .yaml
+
+    YAML 和 properties 的区别:
+        1.在 properties 中 "." 进行分割，YAML使用 ":" 分割。
+        2.YAML 是 K-V 数据格式，通过 ":" 进行复制。
+        3.每个 K 冒号都要加一个空格，否则报错。
