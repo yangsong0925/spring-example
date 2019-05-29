@@ -15,7 +15,7 @@ public class MybatisApplicationTests {
 
     @Test
     public void userTest(){
-        System.out.println(userService);
+        System.out.println(userService.findAll());
     }
 
 }
