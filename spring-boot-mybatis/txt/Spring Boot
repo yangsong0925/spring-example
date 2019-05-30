@@ -6,3 +6,88 @@ Spring Boot 配置外部属性:
         1.在 properties 中 "." 进行分割，YAML使用 ":" 分割。
         2.YAML 是 K-V 数据格式，通过 ":" 进行复制。
         3.每个 K 冒号都要加一个空格，否则报错。
+
+    https://blog.csdn.net/fmwind/article/details/81235401
+
+   WebMvcConfigurationSupport 和 WebMvcConfigurer 配置区别：
+        spring boot2.0之后在构造spring配置文件时 实现 WebMvcConfigurer，继承 WebMvcConfigurationSupport 类是会导致自动配置失效的。
+
+        一. WebMvcConfigurationSupport
+
+            1. 继承 WebMvcConfigurationSupport 类是会导致自动配置失效的原因:
+                在spring boot的自定义配置类继承 WebMvcConfigurationSupport 后，发现自动配置的静态资源路径
+                （classpath:/META/resources/，classpath:/resources/，classpath:/static/，classpath:/public/）不生效。
+
+               web 自动配置类 WebMvcAutoConfiguration 定义：
+
+                    @ConditionalOnMissingBean({WebMvcConfigurationSupport.class})
+                    注解的意思是在项目类路径中 缺少 WebMvcConfigurationSupport类型的bean时改自动配置类才会生效，所以继承 WebMvcConfigurationSupport 后需要自己再重写相应的方法。
+
+                        @Configuration
+                        @ConditionalOnWebApplication(
+                            type = Type.SERVLET
+                        )
+                        @ConditionalOnClass({Servlet.class, DispatcherServlet.class, WebMvcConfigurer.class})
+                        @ConditionalOnMissingBean({WebMvcConfigurationSupport.class})
+                        @AutoConfigureOrder(-2147483638)
+                        @AutoConfigureAfter({DispatcherServletAutoConfiguration.class, TaskExecutionAutoConfiguration.class, ValidationAutoConfiguration.class})
+                        public class WebMvcAutoConfiguration {
+                            public static final String DEFAULT_PREFIX = "";
+                            public static final String DEFAULT_SUFFIX = "";
+                            private static final String[] SERVLET_LOCATIONS = new String[]{"/"};
+
+                            public WebMvcAutoConfiguration() {
+                            }
+
+                            @Bean
+                            @ConditionalOnMissingBean({HiddenHttpMethodFilter.class})
+                            @ConditionalOnProperty(
+                                prefix = "spring.mvc.hiddenmethod.filter",
+                                name = {"enabled"},
+                                matchIfMissing = true
+                            )
+                            public OrderedHiddenHttpMethodFilter hiddenHttpMethodFilter() {
+                                return new OrderedHiddenHttpMethodFilter();
+                            }
+                            ...
+                        }
+
+                    如果想要使用自动配置生效，又要按自己的需要重写某些方法，比如增加 viewController ，则可以自己的配置类可以继承 WebMvcConfigurerAdapter 这个类。
+                    不过在spring5.0版本后这个类被丢弃了 WebMvcConfigurerAdapter，但还是可以用。丢弃的原因:意思是spring 5.0后要使用Java8，而在Java8中接口是可以有default方法的，
+                    所以我们只需要在自定义配置类中直接实现。
+
+                        public interface WebMvcConfigurer {
+                            @Nullable
+                            default Validator getValidator() {
+                                return null;
+                            }
+
+                            @Nullable
+                            default MessageCodesResolver getMessageCodesResolver() {
+                                return null;
+                            }
+                            ...
+                        }
+
+            2. 继承 WebMvcConfigurationSupport类如何配置拦截器:
+
+                    注意：
+                        registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+                        由于继承WebMvcConfigurationSupport后会导致自动配置失效，所以这里要指定默认的静态资源的位置。同时要注意不能写成
+                            registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+
+                    @Configuration
+                    public class MyConfigurer extends WebMvcConfigurationSupport {
+
+                        @Override
+                        protected void addInterceptors(InterceptorRegistry registry) {
+                           registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**").excludePathPatterns("/emp/toLogin","/emp/login","/js/**","/css/**","/images/**");
+                            super.addInterceptors(registry);
+                        }
+
+                        @Override
+                        protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+                            registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
+                            super.addResourceHandlers(registry);
+                        }
+                    }
