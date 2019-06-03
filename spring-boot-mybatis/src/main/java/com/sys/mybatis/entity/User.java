@@ -1,6 +1,6 @@
 package com.sys.mybatis.entity;
 
-import lombok.Data;
+        import lombok.Data;
 
 /**
  * @author ：yangsong
