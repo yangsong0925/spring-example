@@ -1,9 +1,15 @@
-package com.sys;
+package com;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * Demo class
+ *
+ * @author keriezhang
+ * @date 2016/10/31
+ */
 @SpringBootApplication
 @MapperScan("com.sys.mybatis.mapper")
 public class SpringBootMybatisApplication {
