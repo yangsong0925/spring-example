@@ -1,15 +1,12 @@
 package com.sys.controller;
 
-import com.sys.mybatis.entity.User;
+import com.sys.common.utils.ResultUtil;
+import com.sys.common.vo.Result;
 import com.sys.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * @author ：yangsong
@@ -19,16 +16,15 @@ import java.util.List;
  * @version: $version$
  */
 
-@Controller
+@RestController
 @RequestMapping("user")
 public class UserController {
 
     @Autowired private UserService userService;
 
-    @RequestMapping("userAll")
-    @ResponseBody
-    public List<User> getUserAll(){
-        return userService.findAll();
+    @GetMapping("userAll")
+    public Result getUserAll(){
+        return  ResultUtil.ok(userService.findAll());
     }
 
     @GetMapping("delete")

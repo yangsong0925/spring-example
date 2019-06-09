@@ -47,10 +47,21 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!-- mybatis的分页插件 -->
+         <dependency>
+             <groupId>com.github.pagehelper</groupId>
+             <artifactId>pagehelper</artifactId>
+             <version>4.1.6</version>
+         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8</version>
         </dependency>
     </dependencies>
 
@@ -64,6 +75,32 @@
                 <!--</configuration>-->
             </plugin>
         </plugins>
+
+        <!--
+            resources 插件
+               directory： 指定 resources 插件处理那个目录下的资源文件
+、             targetPath： 打包后存放位置
+        -->
+        <resources>
+            <!--<resource>-->
+                <!--<directory>src/main/webapp</directory>-->
+                <!--&lt;!&ndash;注意此次必须要放在此目录下才能被访问到 &ndash;&gt;-->
+                <!--<targetPath>META-INF/resources</targetPath>-->
+                <!--<includes>-->
+                    <!--<include>**/**</include>-->
+                <!--</includes>-->
+            <!--</resource>-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
+
+
+
 
 </project>

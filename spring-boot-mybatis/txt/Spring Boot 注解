@@ -4,4 +4,9 @@ Spring Boot 注解：
 		@EnableAutoConfiguration：用于将所有符合自动配置的 Bean 加载到当前 Spring Boot 创建并使用的 IOC 容器中。
 		@ComponentScan：用于自动扫描和加载符合条件的组件或 Bean，并将 Bean 加载到 IOC 容器中
 
-	
+    @Order
+        @Order(Ordered.HIGHEST_PRECEDENCE)
+        public class SimpleCORSFilter implements Filter {
+        }
+        @Order(Ordered.HIGHEST_PRECEDENCE)代表这个过滤器在众多过滤器中级别最高，也就是过滤的时候最先执行
+        @Order(Ordered.LOWEST_PRECEDENCE)恰恰相反，表示级别最低，最后执行过滤操作。
