@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <!--<start-class>com.SpringBootMybatisApplication</start-class>-->
+        <!--<start-class>com.sys.SpringBootMybatisApplication</start-class>-->
     </properties>
 
     <dependencies>
@@ -71,7 +71,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <!--<configuration>-->
-                    <!--<mainClass>com.SpringBootMybatisApplication</mainClass>-->
+                    <!--<mainClass>com.sys.SpringBootMybatisApplication</mainClass>-->
                 <!--</configuration>-->
             </plugin>
         </plugins>

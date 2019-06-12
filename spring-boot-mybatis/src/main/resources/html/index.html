@@ -7,21 +7,96 @@
     <script src="../layui/layui.js"></script>
 </head>
 <body>
-    <table class="layui-hide" id="test"></table>
-
+    <table class="layui-hide" id="test" lay-filter="useruv"></table>
+    <script type="text/html" id="barDemo">
+        <a class="layui-btn layui-btn-primary layui-btn-mini" lay-event="detail">查看</a>
+        <a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+    </script>
     <script>
         layui.use('table', function(){
-            var table = layui.table;
+            var $ = layui.$,table = layui.table;
             table.render({
                 elem: '#test'
                 ,url:'/user/userAll'
-                ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
+                // ,cellMinWidth: 80 //全局定义常规单元格的最小宽度，layui 2.2.1 新增
                 ,cols: [[
-                    {field:'id', width:80, title: '编码', sort: true}
-                    ,{field:'username', width:80, title: '用户名'}
-                    ,{field:'address', width:137, title: '地址', sort: true}
+                    {field:'id', title: '编码', sort: true}
+                    ,{field:'username',  title: '用户名'}
+                    ,{field:'address',  title: '地址', sort: true}
+                    ,{field:'right', title: '操作',toolbar:"#barDemo"}
                 ]]
+                ,id: 'testReload'
+                ,page: true
+
             });
+
+            table.on('checkbox(useruv)', function(obj){
+                console.log(obj)
+            });
+
+            table.on('tool(useruv)', function(obj){
+                debugger;
+                var data = obj.data;
+                if(obj.event === 'detail'){
+                    layer.msg('ID：'+ data.id + ' 的查看操作');
+                } else if(obj.event === 'del'){
+                    layer.confirm('真的删除行么', function(index){
+                        console.log(data);
+                        $.ajax({
+                            url: "/user/delete?id="+data.id,
+                            type: "GET",
+                            dataType: "json",
+                            success: function(data){
+                                if(data.state==1){
+                                    //删除这一行
+                                    obj.del();
+                                    //关闭弹框
+                                    layer.close(index);
+                                    layer.msg("删除成功", {icon: 6});
+                                }else{
+                                    layer.msg("删除失败", {icon: 5});
+                                }
+                            }
+
+                        });
+                    });
+                } else if(obj.event === 'edit'){
+                    layer.prompt({
+                        formType: 2
+                        ,title: '修改 ID 为 ['+ data.id +'] 的访问量'
+                        ,value: data.uv
+                    }, function(value, index){
+                        //这里一般是发送修改的Ajax请求
+                        EidtUv(data,value,index,obj);
+
+                    });
+                }
+            });
+
+            function  EidtUv(data,value,index,obj) {
+                $.ajax({
+                    url: "UVServlet",
+                    type: "POST",
+                    data:{"uvid":data.id,"memthodname":"edituv","aid":data.aid,"uv":value},
+                    dataType: "json",
+                    success: function(data){
+                        if(data.state==1){
+                            //关闭弹框
+                            layer.close(index);
+                            //同步更新表格和缓存对应的值
+                            obj.update({
+                                uv: value
+                            });
+                            layer.msg("修改成功", {icon: 6});
+                        }else{
+                            layer.msg("修改失败", {icon: 5});
+                        }
+                    }
+
+                });
+            }
+
         });
     </script>
 </body>

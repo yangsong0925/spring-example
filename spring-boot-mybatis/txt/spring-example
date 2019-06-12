@@ -10,7 +10,3 @@ spring-example
         @Transactional
             @Transactional(rollbackFor=Exception.class)，该注解类上的方法抛出异常，就会回滚，数据库里面的数据也会回滚。
             在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚。
-
-
-
-https://blog.csdn.net/fmwind/article/details/81235401
