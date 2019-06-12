@@ -11,28 +11,50 @@
     <groupId>com.sys</groupId>
     <artifactId>spring-boot-redis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>spring-boot-redis</name>
     <description>spring boot redis 集成</description>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.0.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+        </dependency>
+        <!-- mybatis的分页插件 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>4.1.6</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -40,9 +62,9 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8</version>
         </dependency>
     </dependencies>
 
@@ -51,8 +73,34 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--<configuration>-->
+                <!--<mainClass>com.sys.SpringBootMybatisApplication</mainClass>-->
+                <!--</configuration>-->
             </plugin>
         </plugins>
+
+        <!--
+            resources 插件
+               directory： 指定 resources 插件处理那个目录下的资源文件
+、             targetPath： 打包后存放位置
+        -->
+        <resources>
+            <!--<resource>-->
+            <!--<directory>src/main/webapp</directory>-->
+            <!--&lt;!&ndash;注意此次必须要放在此目录下才能被访问到 &ndash;&gt;-->
+            <!--<targetPath>META-INF/resources</targetPath>-->
+            <!--<includes>-->
+            <!--<include>**/**</include>-->
+            <!--</includes>-->
+            <!--</resource>-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
