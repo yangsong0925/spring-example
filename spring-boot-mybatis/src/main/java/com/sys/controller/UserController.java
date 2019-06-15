@@ -24,12 +24,13 @@ public class UserController {
 
     @GetMapping("userAll")
     public Result getUserAll(){
-        return  ResultUtil.ok(userService.findAll());
+        System.out.println("test");return  ResultUtil.ok(userService.findAll());
     }
 
     @GetMapping("delete")
-    public int deleteById(int id){
-        return userService.deleteUser(id);
+    public Result deleteById(int id){
+        Result ok = ResultUtil.ok(userService.deleteUser(id));
+        return ok;
     }
 
 
