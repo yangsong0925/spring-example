@@ -28,8 +28,9 @@ public class UserController {
     }
 
     @GetMapping("delete")
-    public int deleteById(int id){
-        return userService.deleteUser(id);
+    public Result deleteById(int id){
+        Result ok = ResultUtil.ok(userService.deleteUser(id));
+        return ok;
     }
 
 

@@ -1,6 +1,6 @@
-Spring Boot 注解：
+Spring 注解：
 	@SpringBootApplication: 复合注解，重要的三个注解包含 @SpringBootConfiguration 、@EnableAutoConfiguration 、@ComponentScan 通常用在主类上。
-		@SpringBootConfiguration：该注解与 @ComponentScan 的作用相同，表示其标注的类是 IOC 容器的配置类。	
+		@SpringBootConfiguration：该注解与 @ComponentScan 的作用相同，表示其标注的类是 IOC 容器的配置类。
 		@EnableAutoConfiguration：用于将所有符合自动配置的 Bean 加载到当前 Spring Boot 创建并使用的 IOC 容器中。
 		@ComponentScan：用于自动扫描和加载符合条件的组件或 Bean，并将 Bean 加载到 IOC 容器中
 
@@ -10,3 +10,7 @@ Spring Boot 注解：
         }
         @Order(Ordered.HIGHEST_PRECEDENCE)代表这个过滤器在众多过滤器中级别最高，也就是过滤的时候最先执行
         @Order(Ordered.LOWEST_PRECEDENCE)恰恰相反，表示级别最低，最后执行过滤操作。
+
+   @Transactional
+        @Transactional(rollbackFor=Exception.class)，该注解类上的方法抛出异常，就会回滚，数据库里面的数据也会回滚。
+        在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚。

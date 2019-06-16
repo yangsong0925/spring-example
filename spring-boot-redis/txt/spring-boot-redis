@@ -1,0 +1,20 @@
+spring-boot-redis
+
+    @EnableCaching：开启缓存。
+
+    @Cacheable 存储缓存到Redis中，注解中的key属性值 需要被英文双引号引用，否则系统执行缓存操作异常。
+        @Cacheable(value = "UserCache",key = "'user.findAll'")
+
+    @CacheEvict 清除Rrdis缓存，注解中的key属性值 需要被英文双引号引用，否则系统执行缓存操作异常。
+        @CacheEvict(value = "UserCache",key = "'user.findAll'")
+
+
+    pom
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+    redis 配置
+        spring.redis.host=127.0.0.1         主机
+        spring.redis.port=6379              端口

@@ -7,7 +7,7 @@ Spring Boot 配置外部属性:
         2.YAML 是 K-V 数据格式，通过 ":" 进行复制。
         3.每个 K 冒号都要加一个空格，否则报错。
 
-    https://blog.csdn.net/fmwind/article/details/81235401
+
 
    WebMvcConfigurationSupport 和 WebMvcConfigurer 配置区别：
         spring boot2.0之后在构造spring配置文件时 实现 WebMvcConfigurer，继承 WebMvcConfigurationSupport 类是会导致自动配置失效的。
