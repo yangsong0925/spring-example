@@ -1,0 +1,12 @@
+spring-boot-activeMq
+
+
+https://blog.csdn.net/liuchuanhong1/article/details/54603546
+
+https://www.cnblogs.com/legend886/articles/7472963.html
+
+
+    外部 activeMq 集成:
+        http://127.0.0.1:8161/admin/ 页面地址。
+
+        spring.activemq.broker-url=tcp://127.0.0.1:61616 配置外部 activeMq 地址
