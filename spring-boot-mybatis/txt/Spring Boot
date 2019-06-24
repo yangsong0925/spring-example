@@ -212,7 +212,7 @@ Spring Boot 配置外部属性:
             spring-boot:build-info，生成Actuator使用的构建信息文件build-info.properties
 
     Spring Boot 打包方式:
-        jar :
+        jar:
             1. 指定 mainClass,避免 java -jar xxx.jar 报错无法加载主类。
 
                  <plugin>
@@ -225,4 +225,32 @@ Spring Boot 配置外部属性:
                 </plugin>
             2. idea Lifecycle -> install,Lifecycle lifecycle是maven中一个十分完善的生命周期模型，所以使用Lifecycle中的install项目就会自动去maven仓库下载需要的包。
 
+
+        war:
+            1.修改 pom 文件。 打包方式，scope 依赖范围。
+                <packaging>war</packaging>
+
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <scope>provided</scope>
+                </dependency>
+                spring-boot-starter-tomcat 是Spring Boot自带的 Tomcat 依赖，默认会被打到项目的 lib 包中。 当依赖范围设置 provided 时，
+                将产生一个可执行的 WAR 包，在包中的 lib-provided 依赖，。
+                执行方式: a.部署到 servlet 容器启动。   b. java -jar 命令执行。
+
+             2.创建 SpringBootServletInitializer 子类，并覆盖配置方法。
+                产生可部署 WAR 包，提供一个 SpringBootServletInitializer 子类，并覆盖 configure() 方法。
+                两种方式:
+                    a.应用主类(引导类)修改为继承 SpringBootServletInitializer 的类，并覆盖 configure() 方法。(引导类就是启动类)
+                    b.创建一个继承 SpringBootServletInitializer 的类，并覆盖 configure() 方法。
+                        public class ServletInitializer extends SpringBootServletInitializer {
+
+                            @Override
+                            protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+                                return builder.sources(SpringBootAmqApplication.class);
+                            }
+
+                        }
+                1   c. package 命令打成WAR包，部署到Tomcat中启动。
 
