@@ -211,3 +211,18 @@ Spring Boot 配置外部属性:
             spring-boot:stop，在mvn integration-test阶段，进行Spring Boot应用生命周期的管理
             spring-boot:build-info，生成Actuator使用的构建信息文件build-info.properties
 
+    Spring Boot 打包方式:
+        jar :
+            1. 指定 mainClass,避免 java -jar xxx.jar 报错无法加载主类。
+
+                 <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>1.5.4.RELEASE</version>
+                    <configuration>
+                        <mainClass>com.sys.SpringBootAmqApplication</mainClass>
+                    </configuration>
+                </plugin>
+            2. idea Lifecycle -> install,Lifecycle lifecycle是maven中一个十分完善的生命周期模型，所以使用Lifecycle中的install项目就会自动去maven仓库下载需要的包。
+
+

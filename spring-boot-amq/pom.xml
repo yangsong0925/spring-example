@@ -11,7 +11,7 @@
     <groupId>com.sys</groupId>
     <artifactId>spring-boot-amq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>spring-boot-amq</name>
     <description>spring boot amq 集成</description>
 
@@ -61,6 +61,11 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.8</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 
@@ -80,8 +85,12 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.4.RELEASE</version>
+                <configuration>
+                    <mainClass>com.sys.SpringBootAmqApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
+        <!--<finalName>SpringBootAmq</finalName>-->
     </build>
 
 
