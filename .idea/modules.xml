@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" filepath="$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-springcloud/microservice-springcloud.iml" filepath="$PROJECT_DIR$/microservice-springcloud/microservice-springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-amq/spring-boot-amq.iml" filepath="$PROJECT_DIR$/spring-boot-amq/spring-boot-amq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis/spring-boot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
