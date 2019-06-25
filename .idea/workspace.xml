@@ -4,36 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/sys/config/MybatisConfig.java" line="16" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="735923a7-b1d0-4978-b195-3e2381f64e18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservice-eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mybatis/txt/Spring Boot" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mybatis/txt/Spring Boot" afterDir="false" />
-    </list>
-    <list id="688ae920-198c-43bd-855d-6ad8c5b2a654" name="idaeConfig" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_boot_amq_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/spring_boot_amq_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-amq/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-amq/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-amq/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-amq/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-amq/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_16_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="735923a7-b1d0-4978-b195-3e2381f64e18" name="Default Changelist" comment="idaeConfig">
+      <change afterPath="$PROJECT_DIR$/microservice-eureka-server/src/main/java/com/sys/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-eureka-server/src/main/java/com/sys/SpringBootAmqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice-eureka-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-eureka-server/microservice-eureka-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-springcloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-springcloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-springcloud/src/main/resources/application.properties" beforeDir="false" />
     </list>
+    <list id="688ae920-198c-43bd-855d-6ad8c5b2a654" name="idaeConfig" comment="idaeConfig" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/spring-boot-mybatis/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-redis/target/" />
@@ -66,32 +47,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservice-springcloud/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservice-eureka-server/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="133">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/microservice-springcloud/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-mybatis/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="133">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-springcloud/mvnw.cmd">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microservice-eureka-server/src/main/java/com/sys/SpringBootAmqApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,8 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-mybatis/src/test/java/com/sys/MybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/sys/interceptor/CustomHandlerInterceptor.java" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/txt/SpringBoot-配置" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java/com/sys/mybatis/entity/User.java" />
@@ -196,6 +192,8 @@
         <option value="$PROJECT_DIR$/spring-boot-amq/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-amq/txt/spring-boot-amq" />
         <option value="$PROJECT_DIR$/spring-boot-mybatis/txt/Spring Boot" />
+        <option value="$PROJECT_DIR$/microservice-eureka-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/microservice-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-springcloud/pom.xml" />
       </list>
     </option>
@@ -255,8 +253,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,12 +262,115 @@
             </path>
             <path>
               <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
               <item name="microservice-springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-springcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-amq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-amq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-amq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-amq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,7 +381,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561394526291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561395580600" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-mybatis/WEB-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -294,24 +393,24 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-mybatis\src\main\resources\html" />
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-mybatis\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.sys" />
       <recent name="com" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\IntelliJIDEA\spring-example\microservice-springcloud\src\main\resources" />
+      <recent name="D:\java\IntelliJIDEA\spring-example\microservice-eureka-server\src\main" />
+      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-amq\txt" />
+      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-redis\txt" />
+      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-amq\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sys.common.vo" />
       <recent name="com" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-amq\txt" />
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-redis\txt" />
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-amq\src\main\resources" />
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-amq\src\main\java\com\sys" />
-      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-redis\src\main\java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-mybatis\src\main\resources\html" />
+      <recent name="D:\java\IntelliJIDEA\spring-example\spring-boot-mybatis\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -417,7 +516,9 @@
       <workItem from="1561234997120" duration="1960000" />
       <workItem from="1561299453915" duration="5801000" />
       <workItem from="1561376143810" duration="24000" />
-      <workItem from="1561379205331" duration="3530000" />
+      <workItem from="1561379205331" duration="5197000" />
+      <workItem from="1561473384652" duration="4924000" />
+      <workItem from="1561480904957" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="layui mybatis spring boot web提交">
       <created>1558975357222</created>
@@ -538,7 +639,35 @@
       <option name="project" value="LOCAL" />
       <updated>1561379348806</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="init">
+      <created>1561394507638</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1561394507638</updated>
+    </task>
+    <task id="LOCAL-00019" summary="init">
+      <created>1561394518827</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1561394518827</updated>
+    </task>
+    <task id="LOCAL-00020" summary="idaeConfig">
+      <created>1561394536512</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1561394536512</updated>
+    </task>
+    <task id="LOCAL-00021" summary="idaeConfig">
+      <created>1561394546300</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1561394546300</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,7 +703,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109836000" />
+    <option name="totallyTimeSpent" value="117067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,7 +718,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.27010724" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853802" visible="true" weight="0.325067" />
       <window_info id="JRebel" order="1" side_tool="true" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -611,7 +740,7 @@
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.49932975" weight="0.8045326" />
-      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.50067115" side_tool="true" weight="0.4815864" />
+      <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.50067115" side_tool="true" weight="0.48090523" />
       <window_info anchor="bottom" id="Spring" order="15" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="16" weight="0.3286119" />
       <window_info anchor="bottom" id="JRebel Executor" order="17" weight="0.5708215" />
@@ -621,7 +750,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.32908848" />
@@ -733,10 +862,11 @@
     <MESSAGE value="删除操作" />
     <MESSAGE value="test" />
     <MESSAGE value="删除按钮" />
-    <MESSAGE value="init" />
     <MESSAGE value="maven-compiler:版本问题" />
     <MESSAGE value="Spring Boot war 打包" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Boot war 打包" />
+    <MESSAGE value="init" />
+    <MESSAGE value="idaeConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="idaeConfig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,30 +891,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/utils/GlobalConfigUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/exception/InternalServerException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/mybatis/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/enums/CabinEnum.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/exception/DataNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/vo/Result.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/common/utils/CodeUtils.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -954,12 +1060,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-redis/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/test/java/com/sys/SpringBootAmqApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1008,13 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/SpringBootAmqApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1047,12 +1146,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-amq/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="67" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/java/com/sys/ServletInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1071,29 +1170,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-mybatis/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="file://$PROJECT_DIR$/microservice-springcloud/src/main/java/com/syys/MicroserviceSpringcloudApplication.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-springcloud/src/test/java/com/syys/MicroserviceSpringcloudApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-eureka-server/src/main/java/com/sys/amq/config/JmsConfig.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-springcloud/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="399">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-eureka-server/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    <entry file="file://$PROJECT_DIR$/microservice-eureka-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-amq/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-springcloud/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/microservice-eureka-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-springcloud/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-eureka-server/src/main/java/com/sys/SpringBootAmqApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservice-springcloud/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">
