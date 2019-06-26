@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-eureka-server" />
+        <module name="microservice-eureka-user" />
         <module name="spring-boot-amq" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-redis" />
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel target="8">
       <module name="demo" target="1.8" />
       <module name="microservice-eureka-server" target="1.8" />
+      <module name="microservice-eureka-user" target="1.8" />
       <module name="microservice-springcloud" target="1.8" />
       <module name="spring-boot-amq" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
@@ -26,6 +28,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
       <module name="microservice-eureka-server" options="-parameters" />
+      <module name="microservice-eureka-user" options="-parameters" />
+      <module name="microservice-springcloud" options="" />
       <module name="spring-boot-amq" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
       <module name="spring-boot-redis" options="-parameters" />

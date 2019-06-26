@@ -1,0 +1,12 @@
+集成问题:
+    SpringBoot SpringCloud集成版本不一致应用启动错误。
+
+eureka.instance.appname 与 spring.application.name 有何区别？(路由有关)     https://blog.csdn.net/ahutdbx/article/details/86613850
+
+
+
+https://blog.csdn.net/fenglllle/article/details/88410700  学习
+
+    @EnableEurekaClient或者@EnableDiscoveryClient 区别
+
+    eureka-user  SpringBoot 继承 SpringBootServletInitializer 报错

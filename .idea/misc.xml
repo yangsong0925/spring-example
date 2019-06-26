@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/spring-boot-amq/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-springcloud/pom.xml" />
         <option value="$PROJECT_DIR$/microservice-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eureka-user/pom.xml" />
       </list>
     </option>
   </component>
