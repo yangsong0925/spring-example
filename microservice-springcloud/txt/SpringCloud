@@ -10,3 +10,7 @@ https://blog.csdn.net/fenglllle/article/details/88410700  学习
     @EnableEurekaClient或者@EnableDiscoveryClient 区别
 
     eureka-user  SpringBoot 继承 SpringBootServletInitializer 报错
+
+
+SpringCloud注解和配置以及pom依赖说明(Spring Clou版本1.X  版本待验证)
+    https://www.cnblogs.com/zhuwenjoyce/p/9663324.html

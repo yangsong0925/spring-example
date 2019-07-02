@@ -15,7 +15,7 @@ import org.springframework.cache.annotation.EnableCaching;
  *
  */
 @SpringBootApplication
-@MapperScan("com.sys.mybatis.mapper")
+@MapperScan("com.com.sys.mybatis.mapper")
 @EnableCaching
 public class SpringBootRedisApplication {
 

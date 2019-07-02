@@ -220,7 +220,7 @@ Spring Boot 配置外部属性:
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>1.5.4.RELEASE</version>
                     <configuration>
-                        <mainClass>com.sys.SpringBootAmqApplication</mainClass>
+                        <mainClass>com.com.sys.SpringBootAmqApplication</mainClass>
                     </configuration>
                 </plugin>
             2. idea Lifecycle -> install,Lifecycle lifecycle是maven中一个十分完善的生命周期模型，所以使用Lifecycle中的install项目就会自动去maven仓库下载需要的包。

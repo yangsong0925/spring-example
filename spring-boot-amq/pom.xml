@@ -8,7 +8,7 @@
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.sys</groupId>
+    <groupId>com.com.sys</groupId>
     <artifactId>spring-boot-amq</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
@@ -86,7 +86,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>1.5.4.RELEASE</version>
                 <configuration>
-                    <mainClass>com.sys.SpringBootAmqApplication</mainClass>
+                    <mainClass>com.com.sys.SpringBootAmqApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

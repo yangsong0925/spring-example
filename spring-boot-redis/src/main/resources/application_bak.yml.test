@@ -18,4 +18,4 @@ server:
   spring.datasource.password=123
 
   # logging
-  logging.level.com.sys=debug
+  logging.level.com.com.sys=debug
