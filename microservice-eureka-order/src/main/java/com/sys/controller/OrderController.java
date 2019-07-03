@@ -1,5 +1,6 @@
 package com.sys.controller;
 
+import com.sys.config.ServiceInfoUtil;
 import com.sys.po.Order;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +20,7 @@ public class OrderController {
 
     @GetMapping("find/{id}")
     public Order findOrderById(@PathVariable String id){
+        System.out.println("eureka-order port ... :" + ServiceInfoUtil.getPort());
         Order order = new Order();
         order.setId(id);
         order.setPrice(23.5);
