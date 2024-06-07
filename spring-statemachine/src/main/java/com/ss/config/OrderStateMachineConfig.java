@@ -32,8 +32,7 @@ public class OrderStateMachineConfig extends StateMachineConfigurerAdapter<Order
      * @throws Exception
      */
     public void configure(StateMachineStateConfigurer<OrderStatus, OrderStatusChangeEvent> states) throws Exception {
-        states
-                .withStates()
+        states.withStates()
                 .initial(OrderStatus.WAIT_PAYMENT)
                 .states(EnumSet.allOf(OrderStatus.class));
     }
