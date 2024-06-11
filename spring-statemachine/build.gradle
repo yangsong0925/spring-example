@@ -17,16 +17,29 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    springStatemachineVersion = '4.0.0'
+    lombokVersion = '1.18.28'
+    springBootVersion = '3.3.0'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.springframework.statemachine:spring-statemachine-core:2.0.1.RELEASE'
-    compileOnly 'org.projectlombok:lombok:1.18.28'
-    annotationProcessor 'org.projectlombok:lombok:1.18.28'
-
+    implementation 'org.springframework.statemachine:spring-statemachine-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    testCompileOnly 'org.projectlombok:lombok:1.18.28'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.statemachine:spring-statemachine-bom:${springStatemachineVersion}"
+    }
 }
 
 tasks.named('test') {
