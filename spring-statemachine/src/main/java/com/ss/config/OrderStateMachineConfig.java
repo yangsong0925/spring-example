@@ -31,6 +31,7 @@ public class OrderStateMachineConfig extends StateMachineConfigurerAdapter<Order
      * @param states
      * @throws Exception
      */
+    @Override
     public void configure(StateMachineStateConfigurer<OrderStatus, OrderStatusChangeEvent> states) throws Exception {
         states.withStates()
                 .initial(OrderStatus.WAIT_PAYMENT)
@@ -43,6 +44,7 @@ public class OrderStateMachineConfig extends StateMachineConfigurerAdapter<Order
      * @param transitions
      * @throws Exception
      */
+    @Override
     public void configure(StateMachineTransitionConfigurer<OrderStatus, OrderStatusChangeEvent> transitions) throws Exception {
         transitions
                 .withExternal().source(OrderStatus.WAIT_PAYMENT).target(OrderStatus.WAIT_DELIVER).event(OrderStatusChangeEvent.PAYED)

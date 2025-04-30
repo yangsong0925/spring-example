@@ -6,12 +6,12 @@ import com.ss.eums.OrderStatusChangeEvent;
 import com.ss.service.OrderService;
 import jakarta.annotation.Resource;
 import lombok.Getter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.persist.StateMachinePersister;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -34,6 +34,7 @@ public class OrderServiceImpl implements OrderService {
     @Getter
     private Map<Integer, Order> orders = new HashMap<>();
 
+    @Override
     public Order create() {
         Order order = new Order();
         order.setStatus(OrderStatus.WAIT_PAYMENT);
@@ -42,6 +43,7 @@ public class OrderServiceImpl implements OrderService {
         return order;
     }
 
+    @Override
     public Order pay(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试支付，订单号：" + id);
@@ -52,6 +54,7 @@ public class OrderServiceImpl implements OrderService {
         return orders.get(id);
     }
 
+    @Override
     public Order deliver(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试发货，订单号：" + id);
@@ -61,6 +64,7 @@ public class OrderServiceImpl implements OrderService {
         return orders.get(id);
     }
 
+    @Override
     public Order receive(int id) {
         Order order = orders.get(id);
         System.out.println("线程名称：" + Thread.currentThread().getName() + " 尝试收货，订单号：" + id);
@@ -87,7 +91,7 @@ public class OrderServiceImpl implements OrderService {
             Thread.sleep(1000);
             result = orderStateMachine.sendEvent(message);
             //持久化状态机状态
-            persister.persist(orderStateMachine, order);
+            orderStateMachine.sendEvent(Mono.just(message)).subscribe();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
